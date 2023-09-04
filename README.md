@@ -7,3 +7,7 @@ Scala Algos
 Test
 ----
 1. sbt clean test
+
+Resources
+---------
+* [Scala Algorithms](https://www.scala-algorithms.com/)
