@@ -5,7 +5,7 @@ Scala Algos
 * A96 - [Is list a plaindrome?](https://github.com/objektwerks/scala.algos/blob/main/src/main/scala/objektwerks/A96.scala)
 * A97 - [Find the unpaired number in a list.](https://github.com/objektwerks/scala.algos/blob/main/src/main/scala/objektwerks/A97.scala)
 * A98 - [Find max sequence of zeros in binary representation of an integer.](https://github.com/objektwerks/scala.algos/blob/main/src/main/scala/objektwerks/A98.scala)
-* A99 - Find the max profit in a list.
+* A99 - [Find the max profit in a list.](https://github.com/objektwerks/scala.algos/blob/main/src/main/scala/objektwerks/A99.scala)
 * A100 - FizzBuzz
 
 Test
