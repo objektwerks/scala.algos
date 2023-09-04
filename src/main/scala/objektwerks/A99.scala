@@ -1,7 +1,7 @@
 package objektwerks
 
 /**
-  * Find an max profit in a list of prices.
+  * Find the max profit in a list of prices.
   */
 object A99:
   def findMaxProfit(prices: List[Int]): Option[Int] =
