@@ -6,7 +6,7 @@ import org.scalatest.matchers.should.Matchers
 import A95.*
 
 class A95Test extends AnyFunSuite with Matchers:
-  test("containsBalancedParens") {
+  test("contains balanced parens") {
     containsBalancedParens("()") shouldBe true
     containsBalancedParens("(") shouldBe false
   }
