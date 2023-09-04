@@ -1,11 +1,11 @@
 package objektwerks
 
 /**
-  * For an integer, output:
-  * 1. if divisible by 15 ( 3 * 5 ) return "fizzbuzz"
-  * 2. else if divisible by 3 return "fizz"
-  * 3. else if divisible by 5 return "buzz"
-  * 4. else return input number
+  * For a number, output:
+  * 1. if number divisible by 15 ( 3 * 5 ) return "fizzbuzz"
+  * 2. else if numbber divisible by 3 return "fizz"
+  * 3. else if number divisible by 5 return "buzz"
+  * 4. else return number
   */
 object A100:
   def fizzbuzz(n: Int): String =
