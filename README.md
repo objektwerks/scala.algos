@@ -4,6 +4,7 @@ Scala Algos
 * A95 - Does string contain balanced parens?
 * A96 - Is list a plaindrome?
 * A97 - Find the unpaired number in a list.
+* A98 - Find max sequence of zeros in binary representation of an integer.
 * A99 - Find the max profit in a list.
 * A100 - FizzBuzz
 
