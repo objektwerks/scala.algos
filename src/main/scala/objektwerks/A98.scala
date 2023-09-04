@@ -6,9 +6,9 @@ import scala.annotation.tailrec
   * Find the max sequence of zeros in the binary representation of an integer.
   */
 object A98:
-  def isEven(n: Int): Boolean = !isOdd(n)
+  private def isEven(n: Int): Boolean = !isOdd(n)
 
-  def isOdd(n: Int): Boolean = (n & 1) == 1
+  private def isOdd(n: Int): Boolean = (n & 1) == 1
 
   @tailrec
   def removeRightZeroes(number: Int): Int =
