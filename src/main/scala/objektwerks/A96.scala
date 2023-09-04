@@ -8,5 +8,6 @@ package objektwerks
 object A96:
   def isPalindrome[T](list: List[T]): Boolean =
     list
+      .view
       .zip(list.reverse)
       .forall { case (a, b) => a == b }
