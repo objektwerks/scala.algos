@@ -17,7 +17,7 @@ object A98:
     else removeRightZeroes(number >> 1)
 
   def maxSeqOfZeroes(n: Int): Option[Int] =
-    if (n <= 0) then None
+    if n <= 0 then None
     else
       val numberStartingWith1 = removeRightZeroes(n)
 
