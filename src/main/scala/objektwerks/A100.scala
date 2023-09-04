@@ -1,7 +1,7 @@
 package objektwerks
 
 /**
-  * For every number input, you should be able to output:
+  * For an integer, output:
   * 1. if divisible by 15 ( 3 * 5 ) return "fizzbuzz"
   * 2. else if divisible by 3 return "fizz"
   * 3. else if divisible by 5 return "buzz"
