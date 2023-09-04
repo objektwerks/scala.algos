@@ -3,6 +3,7 @@ Scala Algos
 >Scala 3 algos:
 * A96 - Is list a plaindrome?
 * A97 - Find the unpaired number in a list.
+* A99 - Find the max profit in a list.
 * A100 - FizzBuzz
 
 Test
