@@ -3,7 +3,7 @@ package objektwerks
 import scala.annotation.tailrec
 
 /**
-  * Find max sequence of zeros in binary representation of an integer.
+  * Find the max sequence of zeros in the binary representation of an integer.
   */
 object A98:
   def isEven(n: Int): Boolean = !isOdd(n)
@@ -12,7 +12,7 @@ object A98:
 
   @tailrec
   def removeRightZeroes(number: Int): Int =
-    if number == 0 then number
+    if number == 0 then 0
     else if isOdd(number) then number
     else removeRightZeroes(number >> 1)
 
