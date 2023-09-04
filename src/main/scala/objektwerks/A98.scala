@@ -12,21 +12,21 @@ object A98:
 
   @tailrec
   def removeRightZeroes(number: Int): Int =
-    if (number == 0) then number
-    else if (isOdd(number)) then number
+    if number == 0 then number
+    else if isOdd(number) then number
     else removeRightZeroes(number >> 1)
 
-  def maxBinaryGap(n: Int): Option[Int] =
+  def maxSeqOfZeroes(n: Int): Option[Int] =
     if (n <= 0) then None
     else
       val numberStartingWith1 = removeRightZeroes(n)
 
       @tailrec
-      def iterate(currentNumber: Int,
-                  currentCount: Int,
-                  gapCounts: List[Int]): Option[Int] =
-      if (currentNumber == 1) then (currentCount :: gapCounts).maxOption.filter(_ > 0)
-      else if (isEven(currentNumber)) then iterate(currentNumber >> 1, currentCount + 1, gapCounts)
-      else iterate(currentNumber >> 1, 0, currentCount :: gapCounts)
+      def loop(currentNumber: Int,
+               currentCount: Int,
+               gapCounts: List[Int]): Option[Int] =
+      if currentNumber == 1 then (currentCount :: gapCounts).maxOption.filter(_ > 0)
+      else if isEven(currentNumber) then loop(currentNumber >> 1, currentCount + 1, gapCounts)
+      else loop(currentNumber >> 1, 0, currentCount :: gapCounts)
       
-      iterate(numberStartingWith1, 0, Nil)
+      loop(numberStartingWith1, 0, Nil)
