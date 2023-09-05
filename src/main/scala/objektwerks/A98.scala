@@ -24,9 +24,9 @@ object A98:
       @tailrec
       def loop(currentNumber: Int,
                currentCount: Int,
-               zeroesCounts: List[Int]): Option[Int] =
-      if currentNumber == 1 then (currentCount :: zeroesCounts).maxOption.filter(_ > 0)
-      else if isEven(currentNumber) then loop(currentNumber >> 1, currentCount + 1, zeroesCounts)
-      else loop(currentNumber >> 1, 0, currentCount :: zeroesCounts)
+               binaryGapCounts: List[Int]): Option[Int] =
+      if currentNumber == 1 then (currentCount :: binaryGapCounts).maxOption.filter(_ > 0)
+      else if isEven(currentNumber) then loop(currentNumber >> 1, currentCount + 1, binaryGapCounts)
+      else loop(currentNumber >> 1, 0, currentCount :: binaryGapCounts)
       
       loop(numberStartingWith1, 0, Nil)
