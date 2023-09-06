@@ -3,7 +3,7 @@ package objektwerks
 import scala.annotation.tailrec
 
 /**
-  * Find the max sequence of zeros, between two 1s, in the binary representation of an integer.
+  * Find the max sequence of zeros, between two 1s, in the binary representation of an Int.
   */
 object A98:
   private def isEven(n: Int): Boolean = !isOdd(n)
