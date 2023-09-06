@@ -1,7 +1,7 @@
 package objektwerks
 
 /**
-  * Find the unpaired number in a list.
+  * Find the unpaired number in a list of T.
   */
 object A97:
   def findUnpairedItem[T](list: List[T]): Option[T] =
