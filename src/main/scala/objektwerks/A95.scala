@@ -3,7 +3,7 @@ package objektwerks
 import scala.annotation.tailrec
 
 /**
-  * Assert a string contain balanced parens.
+  * Assert a String contains balanced parens.
   */
 object A95:
   def containsBalancedParens(string: String): Boolean =
