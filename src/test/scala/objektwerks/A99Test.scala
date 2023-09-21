@@ -3,6 +3,28 @@ package objektwerks
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
+/**
+  * Find the max profit in a list of Int.
+  */
+object A99:
+  def maxProfit(prices: List[Int]): Option[Int] =
+    val maxSellPrices = prices
+      .view
+      .scanRight(0) {
+        (maxPrice, dayPrice) => Math.max(maxPrice, dayPrice)
+      }
+      .drop(1)
+
+    if prices.length < 2 then None
+    else
+      prices
+        .view
+        .zip(maxSellPrices)
+        .map {
+          (buyPrice, sellPrice) => if sellPrice > buyPrice then Some(sellPrice - buyPrice) else None
+        }
+        .max
+
 import A99.*
 
 class A99Test extends AnyFunSuite with Matchers:
