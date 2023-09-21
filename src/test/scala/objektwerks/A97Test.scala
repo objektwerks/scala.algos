@@ -3,6 +3,19 @@ package objektwerks
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
+/**
+  * Find the unpaired number in a list of T.
+  */
+object A97:
+  def findUnpairedItem[T](list: List[T]): Option[T] =
+    list
+      .view
+      .foldLeft[Set[T]](Set.empty) {
+        case (set, t) if set.contains(t) => set - t
+        case (set, t) => set + t
+      }
+      .headOption
+
 import A97.*
 
 class A97Test extends AnyFunSuite with Matchers:
