@@ -20,10 +20,9 @@ object A100:
 
 import A100.*
 
-class A100Test extends AnyFunSuite with Matchers:
-  test("fizzbuzz") {
+final class A100Test extends AnyFunSuite with Matchers:
+  test("fizzbuzz"):
     fizzbuzz(9) shouldBe "fizz"
     fizzbuzz(10) shouldBe "buzz"
     fizzbuzz(15) shouldBe "fizzbuzz"
     fizzbuzz(7) shouldBe "7"
-  }
