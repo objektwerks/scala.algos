@@ -21,8 +21,7 @@ object A95:
 
 import A95.*
 
-class A95Test extends AnyFunSuite with Matchers:
-  test("contains balanced parens") {
+final class A95Test extends AnyFunSuite with Matchers:
+  test("contains balanced parens"):
     containsBalancedParens("()") shouldBe true
     containsBalancedParens("(") shouldBe false
-  }
