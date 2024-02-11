@@ -1,6 +1,6 @@
 Scala Algos
 -----------
->Scala 3 [algos](https://github.com/objektwerks/scala.algos/tree/main/src/test/scala/objektwerks):
+>Scala 3 algos:
 * A95 - Balanced Parens
 * A96 - List of Plaindrome
 * A97 - Unpaired Number
