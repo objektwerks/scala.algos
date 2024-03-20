@@ -14,5 +14,4 @@ Test
 
 Resources
 ---------
-* [Scala Algorithms](https://www.scala-algorithms.com/)
 * [Scala Structs & Algos](https://github.com/objektwerks/scala.structs.algos)
